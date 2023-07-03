@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
 
+:root {
+	--green: rgb(0, 239, 60);
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.6;
-	color: rgb(0, 239, 60);
+	color: var(--green);
 	background-color: #1f2029;
 	overflow: hidden;
 	height: 100vh;
@@ -56,7 +60,6 @@ a:hover {
 }
 
 .hero-section h2 {
-	/* font-size: 5vw; */
 	line-height: 1;
 	font-weight: 900;
 }
@@ -71,7 +74,7 @@ a:hover {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 4em;
+	font-size: 5rem;
 }
 
 .content .content__Text:nth-child(1) {
@@ -80,7 +83,7 @@ a:hover {
 }
 
 .content .content__Text:nth-child(2) {
-	color: rgb(6, 147, 190);
+	color: var(--green);
 	animation: animate 4s ease-in-out infinite;
 }
 
@@ -97,7 +100,7 @@ a:hover {
 .hero-section .dancing {
 	font-family: 'Dancing Script', cursive;
 	letter-spacing: 1px;
-	color: rgb(0, 239, 60);
+	color: var(--green);
 	font-size: 36px;
 	line-height: 1;
 	font-weight: 700;
@@ -113,7 +116,7 @@ a:hover {
 	font-size: 25px;
 	line-height: 20px;
 	font-weight: 800;
-	color: rgb(0, 239, 60);
+	color: var(--green);
 	letter-spacing: 1px;
 }
 
@@ -185,7 +188,7 @@ body.nature-on .hero-section {
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 700;
-	color: rgb(0, 239, 60);
+	color: var(--green);
 	letter-spacing: 2px;
 	top: 50%;
 	left: 40px;
@@ -264,6 +267,117 @@ body.about-on .about-section {
 	transform: rotate(90deg);
 }
 
+
+
+#drag-container, #spin-container {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: auto;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: rotateX(-10deg);
+	transform: rotateX(-10deg);
+}
+
+#drag-container img, #drag-container video {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 200px;
+	font-size: 50px;
+	text-align: center;
+	-webkit-box-shadow: 0 0 8px #fff;
+	box-shadow: 0 0 8px #fff;
+	-webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#drag-container img:hover, #drag-container video:hover {
+	-webkit-box-shadow: 0 0 15px #fffd;
+	box-shadow: 0 0 15px #fffd;
+	-webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+#drag-container p {
+	font-family: Serif;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotateX(90deg);
+	transform: translate(-50%, -50%) rotateX(90deg);
+	color: #fff;
+}
+
+#ground {
+	width: 900px;
+	height: 900px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotateX(90deg);
+	transform: translate(-50%, -50%) rotateX(90deg);
+	background: -webkit-radial-gradient(center center, farthest-side, #9993, transparent);
+}
+
+#music-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+
+	to {
+		-webkit-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes spin {
+	from {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+
+	to {
+		-webkit-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+}
+
+@-webkit-keyframes spinRevert {
+	from {
+		-webkit-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+
+	to {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+@keyframes spinRevert {
+	from {
+		-webkit-transform: rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+
+	to {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
 .section-center {
 	position: absolute;
 	width: 100%;
@@ -295,7 +409,7 @@ body.about-on .about-section {
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 700;
-	color: rgb(0, 239, 60);
+	color: var(--green);
 	letter-spacing: 2px;
 	top: 50%;
 	right: 40px;
