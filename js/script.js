@@ -2,20 +2,30 @@
 
 const body = document.getElementById("body");
 
-const aboutText = document.querySelector(".about-text");
-const aboutClose = document.querySelector(".about-close");
+const contactSection = document.getElementById('contact-section');
 
-const contactText = document.querySelector(".contact-text");
-const contactClose = document.querySelector(".contact-close");
+const aboutText = body.querySelector(".about-text");
+const aboutClose = body.querySelector(".about-close");
 
-const travel = document.querySelector(".travel");
-const travelClose = document.querySelector(".travel-close");
+const contactText = body.querySelector(".contact-text");
+const contactClose = body.querySelector(".contact-close");
 
-const wildlife = document.querySelector(".wildlife");
-const wildlifeClose = document.querySelector(".wildlife-close");
+const travel = body.querySelector(".travel");
+const travelClose = body.querySelector(".travel-close");
 
-const nature = document.querySelector(".nature");
-const natureClose = document.querySelector(".nature-close");
+const wildlife = body.querySelector(".wildlife");
+const wildlifeClose = body.querySelector(".wildlife-close");
+
+const nature = body.querySelector(".nature");
+const natureClose = body.querySelector(".nature-close");
+
+//for background contact section 
+contactSection.addEventListener("pointermove", (e) => {
+  const { currentTarget: el, clientX: x, clientY: y } = e;
+  const { top: t, left: l, width: w, height: h } = el.getBoundingClientRect();
+  el.style.setProperty('--posX', x - l - w / 2);
+  el.style.setProperty('--posY', y - t - h / 2);
+})
 
 let radius = 240; // how big of the radius
 const autoRotate = true; // auto rotate or not
