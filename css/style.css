@@ -51,7 +51,7 @@ a:hover {
 	display: block;
 	overflow: hidden;
 	height: 100vh;
-	background-image: url(../image/takeFoto.jpg);
+	background-image: url(../image/takeFoto.webp);
 	background-size: cover;
 	background-position: center;
 	transform: scale(1) rotateX(0);
@@ -639,7 +639,7 @@ body.nature-on .nature-section {
 	background-position: center center;
 	background-size: 65%;
 	background-repeat: no-repeat;
-	background-image: url('../image/wolf.jpg');
+	background-image: url('../image/wolf.webp');
 	box-shadow: 0 0 0 2px rgba(255, 255, 255, .1);
 	transition: opacity .2s, border-radius .2s, box-shadow .2s;
 	transition-timing-function: ease-out;
