@@ -3,6 +3,8 @@
 
 :root {
 	--green: rgb(0, 239, 60);
+
+	--dansingColor: rgb(134, 107, 175);
 }
 
 body {
@@ -21,6 +23,7 @@ body {
 
 .dancing {
 	font-family: 'Dancing Script', cursive;
+	color: var(--dansingColor);
 }
 
 a {
@@ -139,14 +142,17 @@ a:hover {
 	content: '';
 	bottom: 10px;
 	left: 50%;
-	height: 30px;
-	width: 30px;
+	height: 24px;
+	width: 24px;
 	margin-left: -15px;
 	z-index: -1;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 30px 30px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/down.svg');
+	background-size: 24px 24px;
+	background-color: rgb(255, 255, 255);
+	-webkit-mask: url('../image/arrow.svg');
+	mask: url('../image/arrow.svg');
+	transform: rotate(180deg);
 	opacity: 0.2;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
@@ -210,14 +216,19 @@ body.nature-on .hero-section {
 	content: '';
 	top: 50%;
 	left: -25px;
-	height: 30px;
-	width: 30px;
+	height: 24px;
+	width: 24px;
 	margin-top: -15px;
 	z-index: -1;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 30px 30px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/left.svg');
+	background-size: 24px 24px;
+	background-color: rgb(255, 255, 255);
+	-webkit-mask: url('../image/arrow.svg');
+	mask: url('../image/arrow.svg');
+	transform: rotate(-90deg);
+	opacity: 0.2;
+	-webkit-transition: all 200ms linear;
 	opacity: 0.2;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
@@ -253,22 +264,25 @@ body.about-on .about-section {
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	width: 30px;
+	width: 24px;
 	display: block;
 	overflow: hidden;
-	height: 30px;
+	height: 24px;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 36px 36px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/close.svg');
+	background-size: 24px 24px;
+	background-color: rgb(255, 0, 0);
+	-webkit-mask: url('../image/close.svg');
+	mask: url('../image/close.svg');
 	cursor: pointer;
 	z-index: 11;
 }
 
 .about-close:hover {
 	transform: rotate(90deg);
+	background-color: var(--green);
 }
 
 
@@ -431,14 +445,17 @@ body.about-on .about-section {
 	content: '';
 	top: 50%;
 	left: -25px;
-	height: 30px;
-	width: 30px;
+	height: 24px;
+	width: 24px;
 	margin-top: -15px;
 	z-index: -1;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 30px 30px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/left.svg');
+	background-size: 24px 24px;
+	background-color: rgb(255, 255, 255);
+	-webkit-mask: url('../image/arrow.svg');
+	mask: url('../image/arrow.svg');
+	transform: rotate(-90deg);
 	opacity: 0.2;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
@@ -484,22 +501,25 @@ body.contact-on .contact-section {
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	width: 30px;
+	width: 24px;
 	display: block;
 	overflow: hidden;
-	height: 30px;
+	height: 24px;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 36px 36px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/close.svg');
+	background-size: 24px 24px;
+	background-color: rgb(255, 0, 0);
+	-webkit-mask: url('../image/close.svg');
+	mask: url('../image/close.svg');
 	cursor: pointer;
 	z-index: 11;
 }
 
 .contact-close:hover {
 	transform: rotate(90deg);
+	background-color: var(--green);
 }
 
 .contact-section {
@@ -557,16 +577,18 @@ body.contact-on .contact-section {
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	width: 30px;
+	width: 24px;
 	display: block;
 	overflow: hidden;
-	height: 30px;
+	height: 24px;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 36px 36px;
-	background-image: url('http://www.ivang-design.com/svg-load/portfolio/close.svg');
+	background-size: 24px 24px;
+	background-color: rgb(255, 0, 0);
+	-webkit-mask: url('../image/close.svg');
+	mask: url('../image/close.svg');
 	cursor: pointer;
 	z-index: 11;
 }
@@ -575,6 +597,7 @@ body.contact-on .contact-section {
 .wildlife-close:hover,
 .nature-close:hover {
 	transform: rotate(90deg);
+	background-color: var(--green);
 }
 
 body.travel-on .travel-section {
