@@ -4,10 +4,10 @@
 :root {
 	--green: rgb(0, 239, 60);
 	--white: #fff;
-	--dansingColor: rgb(134, 107, 175);
+	--dansingColor: rgba(85, 160, 236, 0);
 }
 
-#fff body {
+body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
@@ -24,6 +24,10 @@
 .dancing {
 	font-family: 'Dancing Script', cursive;
 	color: var(--dansingColor);
+	line-height: 1;
+	font-weight: 700;
+	letter-spacing: 1px;
+	-webkit-text-stroke: 1px var(--green);
 }
 
 ul {
@@ -91,7 +95,7 @@ a:hover {
 
 .content .content__Text:nth-child(1) {
 	color: transparent;
-	-webkit-text-stroke: 3px rgb(0, 239, 60);
+	-webkit-text-stroke: 3px var(--green);
 }
 
 .content .content__Text:nth-child(2) {
@@ -110,12 +114,7 @@ a:hover {
 }
 
 .hero-section .dancing {
-	font-family: 'Dancing Script', cursive;
-	letter-spacing: 1px;
-	color: var(--green);
 	font-size: 36px;
-	line-height: 1;
-	font-weight: 700;
 }
 
 @media screen and (max-width: 580px) {
@@ -627,17 +626,6 @@ body.nature-on .nature-section {
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 }
-
-/* .travel-section img,
-.wildlife-section img,
-.nature-section img {
-	margin-top: 30px;
-	width: 100%;
-	height: auto;
-	display: block;
-	border-radius: 4px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-} */
 
 .travel-section h3,
 .wildlife-section h3,
