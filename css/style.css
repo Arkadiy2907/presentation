@@ -660,10 +660,10 @@ body.nature-on .nature-section {
 	text-decoration: none;
 	background: none;
 	cursor: pointer;
-	width: 330px;
-	height: 330px;
-	max-width: 330px;
-	max-height: 330px;
+	width: 21rem;
+	height: 21rem;
+	max-width: 21rem;
+	max-height: 21rem;
 	transition: .2s ease-in-out;
 	padding: 0;
 }
