@@ -661,14 +661,17 @@ body.nature-on .nature-section {
 	max-height: 21rem;
 	transition: .2s ease-in-out;
 	padding: 0;
+
 }
 
 .card img {
+	border-radius: 1rem;
 	transition: .5s ease-in-out;
 }
 
 .card img:hover {
-	transform: scale(1.5);
+	transform: scale(1.2);
+	border-radius: none;
 }
 
 .card__overlay {
@@ -682,16 +685,13 @@ body.nature-on .nature-section {
 	background-color: rgb(000, 200, 255, 0.7);
 	transform: translateY(100%);
 	transition: .2s ease-in-out;
-	border-radius: 0.6rem;
+	border-radius: .6rem;
 	color: var(--white);
 }
 
 .card:hover .card__overlay {
 	transform: translateY(0);
 }
-
-/* #Link to page
-================================================== */
 
 .link-to-portfolio {
 	position: fixed;
