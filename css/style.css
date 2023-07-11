@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 1rem;
 	line-height: 1.6;
@@ -41,11 +41,6 @@ a:hover {
 }
 
 ::selection {
-	color: #c4c3ca;
-	background-color: #000;
-}
-
-::-moz-selection {
 	color: #c4c3ca;
 	background-color: #000;
 }
@@ -113,12 +108,20 @@ a:hover {
 	.hero-section .dancing {
 		font-size: 1.12rem;
 	}
+
+	.hero-section span {
+		font-size: 1.3rem;
+	}
+
+	.hero-section_text {
+		margin-top: 4rem;
+	}
 }
 
 .hero-section p {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	line-height: 1.25rem;
-	font-weight: 800;
+	font-weight: 900;
 	color: var(--green);
 	letter-spacing: 1px;
 }
@@ -532,7 +535,7 @@ body.contact-on .contact-section {
 	margin-left: 8px;
 	margin-right: 8px;
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: 500;
 	letter-spacing: 1px;
 	color: #866BAF;
 	-webkit-text-stroke: .5px var(--green);
@@ -711,4 +714,11 @@ body.nature-on .nature-section {
 	opacity: 0.8;
 	border-radius: 50%;
 	box-shadow: 0 0 0 20px rgba(255, 255, 255, .1);
+}
+
+@media screen and (max-width: 580px) {
+	.link-to-portfolio {
+		width: 10rem;
+		height: 10rem;
+	}
 }
