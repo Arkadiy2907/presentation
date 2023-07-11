@@ -159,17 +159,17 @@ a:hover {
 
 .hero-section p span:hover:before {
 	opacity: 1;
-	bottom: 0.3rem;
+	bottom: .3rem;
 }
 
 body.about-on .hero-section {
-	transform: scale(0.75);
+	transform: scale(.75);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
 
 body.contact-on .hero-section {
-	transform: scale(0.75);
+	transform: scale(.75);
 	-webkit-transition-delay: 0ms;
 	transition-delay: 0ms;
 }
@@ -226,9 +226,7 @@ body.nature-on .hero-section {
 	-webkit-mask: url('../image/arrow.svg');
 	mask: url('../image/arrow.svg');
 	transform: rotate(-90deg);
-	opacity: 0.2;
-	-webkit-transition: all 200ms linear;
-	opacity: 0.2;
+	opacity: .2;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 }
@@ -449,7 +447,7 @@ body.about-on .about-section {
 	-webkit-mask: url('../image/arrow.svg');
 	mask: url('../image/arrow.svg');
 	transform: rotate(-90deg);
-	opacity: 0.2;
+	opacity: .2;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 }
@@ -540,7 +538,7 @@ body.contact-on .contact-section {
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: #866BAF;
-	-webkit-text-stroke: 0.5px var(--green);
+	-webkit-text-stroke: .5px var(--green);
 }
 
 @media screen and (max-width: 580px) {
@@ -551,7 +549,7 @@ body.contact-on .contact-section {
 	.contact-section .social a {
 		margin-left: 3px;
 		margin-right: 3px;
-		font-size: 0.8rem;
+		font-size: .8rem;
 		letter-spacing: 0;
 	}
 }
@@ -635,7 +633,7 @@ body.nature-on .nature-section {
 .travel-section p,
 .wildlife-section p,
 .nature-section p {
-	font-size: 0.875rem;
+	font-size: .875rem;
 	line-height: 1.7;
 	letter-spacing: 1px;
 }
@@ -671,7 +669,7 @@ body.nature-on .nature-section {
 
 .card img:hover {
 	transform: scale(1.2);
-	border-radius: none;
+	border-radius: 0;
 }
 
 .card__overlay {
